@@ -11,9 +11,13 @@
     <Grid Background="#ffe8e100">
         <Label x:Name="time" Content="00:00:00" HorizontalAlignment="Center" VerticalAlignment="Center" 
                Margin="299 95 299 242.6" Foreground="White" FontSize="48"/>
-        <Button x:Name="start" Click="StartStopwatch" Content="Начать" HorizontalAlignment="Center"
-                VerticalAlignment="Center" Margin="280 312 402.4 72.6" Width="100" Height="25" Background="White" Foreground="#ffe8e100"/>
-        <Button Content="Интервал" HorizontalAlignment="Center" VerticalAlignment="Center" 
-                Margin="410 312 272 72.6" Width="100" Height="25" Background="White" Foreground="#ffe8e100"/>
+        <Button x:Name="start" Click="StartStopwatch" Content="Начать" HorizontalAlignment="Left"
+                VerticalAlignment="Top" Margin="273,312,0,0" Width="100" Height="25" Background="White" Foreground="#ffe8e100"/>
+        <Button x:Name="ComeBack" Click="BackStartStopwatch" Content="Обратно" HorizontalAlignment="Left"
+                VerticalAlignment="Top" Margin="273,352,0,0" Width="100" Height="25" Background="White" Foreground="#ffe8e100"/>
+        <Button Click="AddInterval_Click" Content="Интервал" HorizontalAlignment="Left" VerticalAlignment="Top" 
+                Margin="403,312,0,0" Width="100" Height="25" Background="White" Foreground="#ffe8e100"/>
+
+        <ListView x:Name="intervalsList" Margin="100 50 100 0" Height="120"/>
     </Grid>
 </Page>
